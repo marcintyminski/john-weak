@@ -1,3 +1,6 @@
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    mySprite.startEffect(effects.halo)
+})
 controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     sprite += -1
 })

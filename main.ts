@@ -8,7 +8,7 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     sprite += 1
 })
 let mySprite: Sprite = null
-scene.setBackgroundColor(9)
+scene.setBackgroundColor(3)
 let sprite = 0
 let mySprite2 = sprites.create(img`
     . . . . . . . . . . . . . . . . 

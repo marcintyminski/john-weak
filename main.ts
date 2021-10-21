@@ -54,8 +54,10 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.coin, function (sprite, otherSpr
 sprites.onOverlap(SpriteKind.Player, SpriteKind.x, function (sprite, otherSprite) {
     otherSprite.destroy()
     enemy2 = sprites.create(assets.image`Monster`, SpriteKind.Enemy)
-    enemy2.setPosition(158, 59)
+    enemy2.setPosition(mainCharacter.x + 80, mainCharacter.y + 0)
+    enemy2.follow(mainCharacter)
 })
+let enemy2: Sprite = null
 let mySprite: Sprite = null
 let TheDog: Sprite = null
 let leash: Sprite = null
@@ -69,12 +71,10 @@ let monster: Sprite = null
 let coins: Sprite = null
 let x: Sprite = null
 let mainCharacter: Sprite = null
-let enemy2: Sprite = null
 scene.setBackgroundColor(9)
 tiles.setTilemap(tilemap`level1`)
 info.setScore(0)
 info.setLife(3)
-enemy2.follow(mainCharacter)
 mainCharacter = sprites.create(assets.image`John Weak`, SpriteKind.Player)
 controller.moveSprite(mainCharacter, 100, 0)
 scene.cameraFollowSprite(mainCharacter)

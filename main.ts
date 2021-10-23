@@ -13,7 +13,7 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 let sprite = 0
 let mySprite: Sprite = null
-scene.setBackgroundColor(7)
+scene.setBackgroundColor(9)
 let mainCharacter = sprites.create(assets.image`John Weak`, SpriteKind.Player)
 let monster = sprites.create(assets.image`Monster`, SpriteKind.Enemy)
 let criminal = sprites.create(assets.image`Criminal`, SpriteKind.Enemy)
